@@ -10,11 +10,10 @@ def check(a, b, c):
     result = list()
     result.append('True' if a + b > c and a + c > b and b + c > a else 'False')
     if result[0] == 'True':
-        if a == b:
-            if a == c:
-                result.append('Равносторонний')
-            else:
-                result.append('Равнобедренный')
+        if a == b and b == c and c == a:
+            result.append('Равносторонний')
+        elif a == c or b == c or a == b:
+            result.append('Равнобедренный')
         else:
             result.append('Разносторонний')
     return result
