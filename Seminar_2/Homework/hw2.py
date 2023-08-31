@@ -26,25 +26,17 @@ class MyFraction:
                 self.a = self.a // i
                 self.b = self.b // i
 
-
-class MyCalculate:
-    def __init__(self, fraction_a, fraction_b):
-        self.fraction_a = fraction_a
-        self.fraction_b = fraction_b
-
-    def get_sum(self):
-        if self.fraction_a.get_b != self.fraction_b.get_b:
-            x = self.fraction_a.get_a() * self.fraction_b.get_b() + self.fraction_b.get_a() * self.fraction_a.get_b()
-            y = self.fraction_a.get_b() * self.fraction_b.get_b()
+    def __add__(self, other):
+        if self.get_b != other.get_b:
+            x = self.get_a() * other.get_b() + other.get_a() * self.get_b()
+            y = self.get_b() * other.get_b()
         else:
-            x = self.fraction_a.get_a() + self.fraction_b.get_a()
-            y = self.fraction_a.get_b()
+            x = self.get_a() + other.get_a()
+            y = self.get_b()
         return MyFraction(x, y)
 
-    def get_comp(self):
-        x = self.fraction_a.get_a() * self.fraction_b.get_a()
-        y = self.fraction_a.get_b() * self.fraction_b.get_b()
-        return MyFraction(x, y)
+    def __mul__(self, other):
+        return MyFraction(self.get_a() * other.get_a(), self.get_b() * other.get_b())
 
 
 a1 = 3
@@ -52,8 +44,9 @@ b1 = 5
 a2 = 8
 b2 = 9
 
-calc = MyCalculate(MyFraction(a1, b1), MyFraction(a2, b2))
-print(calc.get_sum(), calc.get_comp())
+mf1 = MyFraction(a1, b1)
+mf2 = MyFraction(a2, b2)
+print(mf1 + mf2, mf1 * mf2)
 
 f1 = fractions.Fraction(a1, b1)
 f2 = fractions.Fraction(a2, b2)
