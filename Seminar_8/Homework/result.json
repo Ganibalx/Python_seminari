@@ -1,0 +1,92 @@
+[
+    {
+        "name": "result.json",
+        "parent_dir": "",
+        "type": "file",
+        "size": 1706
+    },
+    {
+        "name": "result.pickle",
+        "parent_dir": "",
+        "type": "file",
+        "size": 537
+    },
+    {
+        "name": "readme.md",
+        "parent_dir": "",
+        "type": "file",
+        "size": 713
+    },
+    {
+        "name": "zadacha.py",
+        "parent_dir": "",
+        "type": "file",
+        "size": 1569
+    },
+    {
+        "name": "result.csv",
+        "parent_dir": "",
+        "type": "file",
+        "size": 339
+    },
+    {
+        "name": "opj[o[pk.md",
+        "parent_dir": "sad2",
+        "type": "file",
+        "size": 13
+    },
+    {
+        "name": "asdad.py",
+        "parent_dir": "sad2",
+        "type": "file",
+        "size": 12
+    },
+    {
+        "name": "jil.html",
+        "parent_dir": "iopih",
+        "type": "file",
+        "size": 136
+    },
+    {
+        "name": "opj[o[pk.md",
+        "parent_dir": "sad",
+        "type": "file",
+        "size": 13
+    },
+    {
+        "name": "asdad.py",
+        "parent_dir": "sad",
+        "type": "file",
+        "size": 12
+    },
+    {
+        "name": "jil.html",
+        "parent_dir": "iopih",
+        "type": "file",
+        "size": 136
+    },
+    {
+        "name": "sad2",
+        "parent_dir": "",
+        "type": "folder",
+        "size": 161
+    },
+    {
+        "name": "sad",
+        "parent_dir": "",
+        "type": "folder",
+        "size": 161
+    },
+    {
+        "name": "iopih",
+        "parent_dir": "sad2",
+        "type": "folder",
+        "size": 136
+    },
+    {
+        "name": "iopih",
+        "parent_dir": "sad",
+        "type": "folder",
+        "size": 136
+    }
+]
