@@ -16,4 +16,6 @@ class MyString(str):
 
 
 s = MyString('Сергей', 'Строка')
+print(s)
+print(s.author)
 print(s.c_time)
